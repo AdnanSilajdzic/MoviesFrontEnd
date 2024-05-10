@@ -9,11 +9,7 @@ import DetailsTrailer from "../../components/DetailsTrailer/DetailsTrailer";
 import DetailsOverview from "../../components/DetailsOverview/DetailsOverview";
 import BarLoader from "react-spinners/BarLoader";
 
-type Props = {
-  type: string;
-};
-
-const Details = ({ type }: Props) => {
+const Details = () => {
   const [contentDetails, setContentDetails] = useState<any>(null);
   const [trailer, setTrailer] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);

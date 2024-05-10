@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import styles from "./CategorySwitch.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../state/store";

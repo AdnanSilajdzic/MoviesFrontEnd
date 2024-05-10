@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./Search.module.css";
 import RubiconLogo from "../../assets/icons/rubicon.svg";
 import "../../index.css";

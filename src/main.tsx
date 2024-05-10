@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Search from "./views/Search/Search";
 import Details from "./views/Details/Details";
 import { Provider } from "react-redux";
@@ -13,11 +13,11 @@ const router = createBrowserRouter([
   },
   {
     path: `/tv/:id`,
-    element: <Details type="tv" />,
+    element: <Details />,
   },
   {
     path: `/movie/:id`,
-    element: <Details type="movie" />,
+    element: <Details />,
   },
 ]);
 
