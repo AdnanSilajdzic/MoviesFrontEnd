@@ -1,6 +1,7 @@
 import styles from "./ContentCard.module.css";
 import calendarIcon from "../../assets/icons/calendar.svg";
 import noPoster from "../../assets/images/no-poster-available.jpg";
+import arrow from "../../assets/icons/arrow.svg";
 import { useSelector } from "react-redux";
 import { RootState } from "../../state/store";
 import { useNavigate } from "react-router-dom";
@@ -21,6 +22,9 @@ const ContentCard = ({ id, title, posterUrl, release_date }: props) => {
         navigate(`/${searchCategory === "movies" ? "movie" : "tv"}/${id}`);
       }}
     >
+      <a className={styles.hiddenText}>
+        Click for more <img src={arrow}></img>
+      </a>
       <img src={posterUrl != null ? posterUrl : noPoster} className={styles.poster}></img>
       <h3 className={styles.movieName}>{title}</h3>
       <div className={styles.info}>
