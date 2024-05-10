@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# Movie and tv show application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a frontend application for browsing movies and tv shows with built in search functionality.
 
-Currently, two official plugins are available:
+## How to start the application
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Make sure that you have node and npm [installed](https://nodejs.org/en/download).
+2. Clone this repository using the following command:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+git clone https://github.com/AdnanSilajdzic/MoviesFrontEnd.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. Enter the MoviesFrontEnd repository
+
+```
+cd MoviesFrontEnd
+```
+
+4. Install all necessary npm packages
+
+```
+npm i
+```
+
+5. Run the development server
+
+```
+npm run dev
+```
+
+6. You should now see a message confirming the application is being served at http://localhost:5173/ .
